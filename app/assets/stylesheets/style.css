@@ -1,0 +1,43 @@
+
+#footer {
+    height: 80px;
+    position: relative;
+    bottom: 0;
+    width:100%;
+}
+#header{
+  position:fixed;
+   width:100%;
+   z-index: 9999;
+}
+body {
+    height: 100%;
+}
+
+.footer_1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer_list{
+  line-height: 25px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.footer_social{
+    padding-top:10px;
+}
+.wrapper{
+  background-color:#f8f8f8;
+  height:200px;
+  border-top: 1px solid black;
+}
+.booking{
+        color:white;
+        position: relative;
+        top: 350px;
+        /*background-color:grey !important;*/
+        /*border-radius:0px !important;*/
+        letter-spacing: 6px;
+}
