@@ -10,8 +10,12 @@
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
+  get 'listing-category/office-get-together' => 'web#office_get_together'
+  get 'listing-category/general-parties' => 'web#general_parties'
+  get 'listing-category/pool_party' => 'web#pool_party'
+  get 'host' => 'web#host'
   # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+  #  get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products

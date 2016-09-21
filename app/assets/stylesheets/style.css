@@ -10,6 +10,10 @@
    width:100%;
    z-index: 9999;
 }
+#content{
+    padding-top:50px;
+    min-height:500px;
+}
 body {
     height: 100%;
 }
@@ -33,7 +37,7 @@ body {
   height:200px;
   border-top: 1px solid black;
 }
-.booking{
+.banner1_desc{
         color:white;
         position: relative;
         top: 350px;
@@ -41,3 +45,14 @@ body {
         /*border-radius:0px !important;*/
         letter-spacing: 6px;
 }
+
+
+.banner2_desc{
+        color:white;
+        position: relative;
+        top: 200px;
+        /*background-color:grey !important;*/
+        /*border-radius:0px !important;*/
+        letter-spacing: 6px;
+}
+
