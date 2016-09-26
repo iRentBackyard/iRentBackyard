@@ -6,7 +6,7 @@
       <div class="modal-header">
          <div id="signup_form_validation" ></div>
       <div class="modal-body">
-             <%= form_for(:user, :url => {:controller => "web", :action => "create_user"}, :html => {:class => "form-horizontal",:id=>"basic_validate"}, :remote => true) do |f| %>
+             <%= form_for(:user, :url => {:controller => "web", :action => "create_user", :link => params[:link]}, :html => {:class => "form-horizontal",:id=>"basic_validate"}, :remote => true) do |f| %>
   <%#= devise_error_messages! %>
     <div id="signup_form_validation" ></div>
      <%= wrap_prepend_input_field("#{f.text_field :first_name, :placeholder => 'First Name',:class =>'form-control input-sm'}", "icon-user", :autofocus => true) %><br/>

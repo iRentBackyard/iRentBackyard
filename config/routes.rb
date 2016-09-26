@@ -18,6 +18,7 @@
   get '/web/register_user/', :controller => 'web', :action => 'register_user'
   post '/web/register_user/', :controller => 'web', :action => 'create_user'
   get '/web/sign_in_user', :controller => 'web', :action => "sign_in_user"
+  get '/web/become_a_host', :controller => 'web', :action => "become_a_host"
   
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #  get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

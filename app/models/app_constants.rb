@@ -1,10 +1,9 @@
 module AppConstants
-    FACEBOOK_PAGE_URL = "#"
+    FACEBOOK_PAGE_URL = "https://www.facebook.com/IRent-Backyard-1111595652294455/"
     TWITTER_URL = "#"
     TUMBLR_URL = "#"
     LINKEDIN_URL = "#"
     GOOGLE_PLUS_URL = "#"
-    TRABOL_BLOG_URL = "#"
     FEED_BURNER_URL = "#"
     YOUTUBE_URL = "#"
     PINTEREST_URL = "#"

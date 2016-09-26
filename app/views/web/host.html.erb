@@ -10,7 +10,7 @@
               <%#= link_to 'Start Hosting', host_path, class: "btn btn-info btn-lg" %>
               <!-- Button trigger modal -->
             <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#signup">-->
-                	<%= link_to "Start Hosting", {:controller => "/web",:action => "register_user"}, :class => 'btn btn-info', 'data-toggle' => 'modal', 'data-target' => '#popup_div', :remote => true %>  
+                	<%= link_to "Start Hosting", {:controller => "/web",:action => "register_user", :link => 'from_host'}, :class => 'btn btn-info', 'data-toggle' => 'modal', 'data-target' => '#popup_div', :remote => true %>  
             
             <!--</button>-->
 
