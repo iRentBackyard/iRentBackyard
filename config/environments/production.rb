@@ -78,4 +78,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
    config.assets.precompile += [ 'login.js', 'login.css', 'application.js','application.css', '*.js', '*.css', '*/*.js', '*/*.css', '*.scss', '*.png', '*.jpg', '*.jpeg', '*.gif', '*/*.png', '*/*.jpg', '*/*.jpeg', '*/*.gif']
+   config.serve_static_files = true
 end
