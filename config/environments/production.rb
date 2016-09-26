@@ -76,4 +76,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+   config.assets.precompile += [ 'login.js', 'login.css', 'application.js','application.css', '*.js', '*.css', '*/*.js', '*/*.css', '*.scss', '*.png', '*.jpg', '*.jpeg', '*.gif', '*/*.png', '*/*.jpg', '*/*.jpeg', '*/*.gif']
 end
