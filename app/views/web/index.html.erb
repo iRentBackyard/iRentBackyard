@@ -4,9 +4,57 @@
         <div class="banner1_desc">
             <center>
           <h1><b>Create Memories          </b></h1>
-          <h4><b>Rent the Backyard          </b></h4>
+          <h4><b>Rent the Backyard          </b></h4> <br>
+       
+       
+        <div class="booking_widget">
+            
+            <div class = row>
+                
+                
+                <h2>Search over 2 million backyards in 191+ countries</h2>
+            </div><br>
+             <div class = row>
+                 <form class="form-inline">
+                  <div class="form-group">
+                    <!--<label for="email">Email address:</label>-->
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                          <div class="form-group">
+                                      <!-- <div class="dropdown">-->
+                                      <!--  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">category-->
+                                      <!--  <span class="caret"></span></button>-->
+                                      <!--  <ul class="dropdown-menu">-->
+                                      <!--    <li><a href="#">HTML</a></li>-->
+                                      <!--    <li><a href="#">CSS</a></li>-->
+                                      <!--    <li><a href="#">JavaScript</a></li>-->
+                                          
+                                      <!--  </ul>-->
+                                      <!--</div>-->
+                                      
+                                      <%= select_tag "city_type", options_for_select(AppConstants::CATEGORY_ARRAY), :prompt => "-- All Categories --", :class =>'btn btn-default dropdown-toggle' %>
+                                       
+                                      
+                                      <%#= select_tag "search_from", "<option>first_name</option><option>last_name</option><option>city_name</option>".html_safe%>
+                      </div>
+                  <!--<div class="form-group">-->
+                    <!--<label for="pwd">Password:</label>-->
+                  <!--  <input type="password" class="form-control" id="pwd">-->
+                  <!--</div>-->
+                  <!--<div class="checkbox">-->
+                  <!--  <label><input type="checkbox"> Remember me</label>-->
+                  <!--</div>-->
+                  <button type="submit" class="btn btn-info">Search</button>
+                </form>
 
-         </center>
+             </div>
+             
+        </div>
+           
+        </center>
+     
+
+        
         </div>
       </div>  
 </div>
@@ -64,7 +112,7 @@
             <center>
           <h1><b>Become A Host  </b></h1><br>
           <small><b>Earn money sharing your Backyards.</b></small><br><br>
-          <button type="button" class="btn btn-primary btn-lg">Become a Host</button>
+          <button type="button" class="btn btn-info btn-lg">Become a Host</button>
          </center>
         </div>
       </div>  

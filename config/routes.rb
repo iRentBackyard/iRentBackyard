@@ -1,4 +1,5 @@
  Rails.application.routes.draw do
+  devise_for :users
   get 'web/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -14,6 +15,10 @@
   get 'listing-category/general-parties' => 'web#general_parties'
   get 'listing-category/pool_party' => 'web#pool_party'
   get 'host' => 'web#host'
+  get '/web/register_user/', :controller => 'web', :action => 'register_user'
+  post '/web/register_user/', :controller => 'web', :action => 'create_user'
+  get '/web/sign_in_user', :controller => 'web', :action => "sign_in_user"
+  
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #  get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

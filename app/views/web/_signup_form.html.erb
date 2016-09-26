@@ -1,0 +1,30 @@
+
+<!-- Modal -->
+<!--<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+  <div class="modal-dialog" role="document" style='width:400px;'>
+    <div class="modal-content">
+      <div class="modal-header">
+         <div id="signup_form_validation" ></div>
+      <div class="modal-body">
+             <%= form_for(:user, :url => {:controller => "web", :action => "create_user"}, :html => {:class => "form-horizontal",:id=>"basic_validate"}, :remote => true) do |f| %>
+  <%#= devise_error_messages! %>
+    <div id="signup_form_validation" ></div>
+     <%= wrap_prepend_input_field("#{f.text_field :first_name, :placeholder => 'First Name',:class =>'form-control input-sm'}", "icon-user", :autofocus => true) %><br/>
+     <%= wrap_prepend_input_field("#{f.text_field :last_name, :placeholder => 'Last Name',:class =>'form-control input-sm'}", "icon-user") %><br/>
+     <%= wrap_prepend_input_field("#{f.email_field :email, :placeholder => 'Email', :class =>'form-control'}", "icon-envelope") %><br/>
+        
+ <%= wrap_prepend_input_field("#{f.password_field :password, :placeholder => 'Password',:class =>'form-control input-sm'}", "icon-lock") %><br/>
+           <%= wrap_prepend_input_field("#{f.password_field :password_confirmation, :placeholder => 'Confirm password',:class =>'form-control input-sm'}", "icon-lock") %>
+<br>
+  <div class="form-actions">
+   <center> <%= f.submit "Sign up",  :class => "btn btn-info" %></center>
+  </div>
+<% end %>
+ <!--<center><span class="callno"><%#= link_to "« Back to Sign In", {:controller => "web",:action => "sign_in_user", :params => params}, :role => 'button', 'data-toggle' => 'modal', 'data-target' => '#popup_div', :remote => true, :style => 'color:blue;font-size:15px' %></span></center>-->
+
+<%#= render "devise/shared/links" %>
+      </div>
+    
+    </div>
+  </div>
+<!--</div>-->

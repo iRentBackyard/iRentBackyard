@@ -40,7 +40,7 @@ body {
 .banner1_desc{
         color:white;
         position: relative;
-        top: 350px;
+        top: 300px;
         /*background-color:grey !important;*/
         /*border-radius:0px !important;*/
         letter-spacing: 6px;
@@ -54,5 +54,25 @@ body {
         /*background-color:grey !important;*/
         /*border-radius:0px !important;*/
         letter-spacing: 6px;
+}
+
+.host_backyard_desc{
+       /*background-color:#31b0d5;*/
+       /*background-color:#00ffff;*/
+       background-color: rgba(0, 0, 0, 0.3);
+       height:350px;
+       width:350px;;
+       color:white;
+       margin-top: 100px;
+       padding: 20px 20px 20px 20px;
+}
+
+#myModal{margin-top: 100px;}
+
+.booking_widget{
+      background-color: rgba(0, 0, 0, 0.6);
+       height:150px;
+       width:1000px;
+       /*margin-top: 30px;*/
 }
 

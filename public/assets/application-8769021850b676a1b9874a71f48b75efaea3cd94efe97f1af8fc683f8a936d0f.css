@@ -1,0 +1,224 @@
+
+#footer {
+    height: 80px;
+    position: relative;
+    bottom: 0;
+    width:100%;
+}
+#header{
+  position:fixed;
+   width:100%;
+   z-index: 9999;
+}
+#content{
+    padding-top:50px;
+    min-height:500px;
+}
+body {
+    height: 100%;
+}
+
+.footer_1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer_list{
+  line-height: 25px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.footer_social{
+    padding-top:10px;
+}
+.wrapper{
+  background-color:#f8f8f8;
+  height:200px;
+  border-top: 1px solid black;
+}
+.banner1_desc{
+        color:white;
+        position: relative;
+        top: 300px;
+        /*background-color:grey !important;*/
+        /*border-radius:0px !important;*/
+        letter-spacing: 6px;
+}
+
+
+.banner2_desc{
+        color:white;
+        position: relative;
+        top: 200px;
+        /*background-color:grey !important;*/
+        /*border-radius:0px !important;*/
+        letter-spacing: 6px;
+}
+
+.host_backyard_desc{
+       /*background-color:#31b0d5;*/
+       /*background-color:#00ffff;*/
+       background-color: rgba(0, 0, 0, 0.3);
+       height:350px;
+       width:350px;;
+       color:white;
+       margin-top: 100px;
+       padding: 20px 20px 20px 20px;
+}
+
+#myModal{margin-top: 100px;}
+
+.booking_widget{
+      background-color: rgba(0, 0, 0, 0.6);
+       height:150px;
+       width:1000px;
+       /*margin-top: 30px;*/
+}
+
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.twitter-hover {
+  background: url("/assets/web/twitter_share-ca87022897eb531b38b5d904d2c654d66b1d4da106ced9637095b9b5cd3ef1f4.jpg") no-repeat;
+}
+
+/* line 4, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.facebook-hover {
+  background: url("/assets/web/facebook_share-da9068c16d69c531e40a18dbf7c4a72bf10f47022b222682d692a11d48151bf2.jpg") no-repeat;
+}
+
+/* line 7, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.linkedin-hover {
+  background: url("/assets/web/linkedin_share-baa28e8bba3763e9a33ccad03bf2c10e894d5a016d6f652ba0a0687c64675bd8.jpg") no-repeat;
+}
+
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.rss-hover {
+  background: url("/assets/web/rss_share-bf497463015cabd60beb5a2dd26d09722ed85ba35ee98a27b1bd94f71d82e0bc.jpg") no-repeat;
+}
+
+/* line 14, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.tumblr-hover {
+  background: url("/assets/web/tumblr_share-3cd21a524a08c7b68a304db49ff907f1511c4c8a1f7b70e0a6210529eb098f49.jpg") no-repeat;
+}
+
+/* line 17, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.google_plus-hover {
+  background: url("/assets/web/googleplus_share-9230242c7f6c430ea7809293ceb3b7c7d36804a2ade09b3bd0787468e43e0904.jpg") no-repeat;
+}
+
+/* line 20, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.youtube-hover {
+  background: url("/assets/web/youtube_share-daf7ece4ea94a8c3a34226ae70bd360896d92411e02a79f8502c9655ccd2f84d.jpg") no-repeat;
+}
+
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.pinterest-hover {
+  background: url("/assets/web/pinterest_share-87d337784f7346c747f3bdf51f8ca0487c29db4cc11d6924e6324275f88ec6e5.jpg") no-repeat;
+}
+
+/* line 26, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.social-slide {
+  background-position: 0px -20px;
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin: 0 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  /*padding: 0 0 0 40px;*/
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.social-slide:hover {
+  background-position: 0px 0px;
+}
+
+/* line 61, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+#banner1 {
+  width: 100%;
+  bottom: 120px;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/web/banner1-23b28a1e8cb67496f303358fd11c40eded080a5d28872c206c872bd1cde17b55.jpg") no-repeat;
+  background-position: center top;
+  height: 600px;
+  margin-bottom: -80px;
+}
+
+/* line 72, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+#banner2 {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/web/banner2-f5648c9164aeafca1f15a8e9514f894a0098d9daf2176ff504794cc2d70f7e9a.jpg") no-repeat;
+  background-position: center bottom;
+  height: 600px;
+  background-size: cover;
+}
+
+/* line 82, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+#how_it_works {
+  z-index: 1000;
+}
+
+/* line 87, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.office_party {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/web/office_party-f77ae109ff77edea538f07e16e6ed1530f7e28551ce5d5923b774b7359f24180.jpg") no-repeat;
+  background-position: center bottom;
+  height: 300px;
+  background-size: cover;
+}
+
+/* line 98, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.general_party {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/web/general_party-e507f79453ec12200bfc6d3c9efc0245da3aaeff741c4e863babeb718c001776.jpg") no-repeat;
+  background-position: center bottom;
+  height: 300px;
+  background-size: cover;
+}
+
+/* line 108, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+.pool_party {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/web/pool_party-4027e37a250b4b7d2be5a5312577f6ae94804a045f8375a35ee9ef3c77089cb7.jpg") no-repeat;
+  background-position: center bottom;
+  height: 300px;
+  background-size: cover;
+}
+
+/* line 118, /home/ubuntu/workspace/app/assets/stylesheets/web.css.scss */
+#banner3 {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("/assets/web/host_backyard-fa110f058348175d12ebe8e4cad6f859bfa950edb106151767687d292535396b.jpg") no-repeat;
+  background-position: center bottom;
+  height: 500px;
+  background-size: cover;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

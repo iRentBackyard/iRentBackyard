@@ -64,7 +64,8 @@
     position: relative;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url( asset-path("web/banner1.jpg") ) no-repeat;;
     background-position:center top;
-    height:700px;
+    height:600px;
+    margin-bottom: -80px;
 }
 
 
@@ -114,3 +115,12 @@
     background-size: cover;
 }
 
+#banner3 {
+    width:100%;
+    // bottom: 120px;
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) ), url( asset-path("web/host_backyard.jpg") ) no-repeat;;
+    background-position:center bottom;
+    height:500px;
+    background-size: cover;
+}

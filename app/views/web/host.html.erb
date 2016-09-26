@@ -1,1 +1,41 @@
-<h1>Host Page</h1>
+<div id='banner3'>
+       <div class='container'>
+        <div class="host_backyard_desc">
+           
+              <h1><b>Earn money as an iRentBackyard host </b></h1>
+              <h4><b>Help people find great Backyards to do parties and earn your income. </b></h4><br>
+             
+              <center>
+                  <!--<a href="#" class="btn btn-info btn-lg" role="button">Primary link</a>-->
+              <%#= link_to 'Start Hosting', host_path, class: "btn btn-info btn-lg" %>
+              <!-- Button trigger modal -->
+            <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#signup">-->
+                	<%= link_to "Start Hosting", {:controller => "/web",:action => "register_user"}, :class => 'btn btn-info', 'data-toggle' => 'modal', 'data-target' => '#popup_div', :remote => true %>  
+            
+            <!--</button>-->
+
+              </center>
+        </div>
+      </div>  
+</div>
+
+
+
+<!-- Modal -->
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+<!--  <div class="modal-dialog" role="document">-->
+<!--    <div class="modal-content">-->
+<!--      <div class="modal-header">-->
+<!--        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+<!--        <h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+<!--      </div>-->
+<!--      <div class="modal-body">-->
+<!--        ...-->
+<!--      </div>-->
+<!--      <div class="modal-footer">-->
+<!--        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+<!--        <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
-        <li><a href="#"></a></li>
+        <!--<li><a href="#"></a></li>-->
         <!--<li class="dropdown">-->
         <!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
         <!--  <ul class="dropdown-menu">-->
@@ -39,11 +39,43 @@
       <ul class="nav navbar-nav navbar-right">
        
          <!--<li> <a href = "<%#= host_path %>"><button type="button" class="btn btn-default navbar-btn">Become a Host</button></a></li>-->
-          <!-- <li><%#= link_to 'Become a Host', host_path, class: "btn btn-default navbar-btn host_btn" %></li> -->
-          <li><button type="button" class="btn btn-default navbar-btn">Become a Host</button></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Log In</a></li>
+        <%= link_to 'Become a Host', host_path, class: "btn btn-default navbar-btn host_btn pull-left" %>
+          <!--<li><button type="button" class="btn btn-default navbar-btn">Become a Host</button></li>-->
+        
+   <!--<li><%#= link_to "signup", {:controller => "/web",:action => "register_user"}, :role => 'button', 'data-toggle' => 'modal', 'data-target' => '#popup_div', :remote => true %>  </li> -->
+   <!--     <li><a href="#">Log In</a></li>-->
+        
+        <% if user_signed_in? %>
+  <%#= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %>
+<%#= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+ <!--<li><%#=  link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>-->
+ 
+<%#= image_tag("web/signin.PNG", class : "img-circle") %>
+
+<li>
+
+<div class="dropdown">
+  <strong><%= current_user.first_name %></strong>&nbsp;
+  <button class="dropdown-toggle" data-toggle="dropdown"><%= image_tag 'web/signin.PNG', :width => '50px' %></button>
+  <ul class="dropdown-menu">
+    <strong>
+    <li><%=  link_to 'Your Trips', '#' %></li>
+    <li><%=  link_to 'Wish Lists', '#' %></li>
+    <li><%=  link_to 'Edit Profile', destroy_user_session_path %></li>
+    <li><%=  link_to 'Account Settings', '#' %></li>
+    <li><%=  link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+    </strong>
+  </ul>
+</div>
+</li>
+
+<% else %>
+<li><a href="#">Help</a></li>
+<li><%= link_to "Sign Up", {:controller => "/web",:action => "register_user"}, :role => 'button', 'data-toggle' => 'modal', 'data-target' => '#popup_div', :remote => true %>  </li>
+  <!--<li><%#= link_to "Login", new_user_session_path  %></li>	-->
+  <li>  <%= link_to "Log In", {:controller => "/web",:action => "sign_in_user"}, :role => 'button', 'data-toggle' => 'modal', 'data-target' => '#popup_div', :remote => true %></li>	
+  <!--<li>  <%#= link_to "Login", {:controller => "/web",:action => "sign_in_user",  :is_from_career => params[:is_from_career]}, :id => 'sign_in', :role => 'button', 'data-toggle' => 'modal', 'data-target' => '#popup_div', 'data-backdrop' => "static", :remote => true %></li>	-->
+<% end %>
         
         <!--<li>Submit</li>-->
         <!--<li class="dropdown">-->
@@ -67,6 +99,23 @@
     .navbar { border-radius: 0px; border-bottom: 1px solid grey;}
     .navbar-form .form-control {width: 600px;}
     .navbar-btn {margin-right:150px;}
+    
+    .dropdown-menu{
+      
+    width: 200px;
+    height: 270px;
+    margin-right: -17px;
+    margin-top: -1px;
+    border-radius: 0px;
+    }
+    .dropdown-menu li{
+    border-bottom: 1px solid silver;
+    height: 50px;
+    padding-top: 8px;
+     padding-left: 40px;
+    
+    
+    }
     
     /*ul li:not(:last-child) {*/
     /*    border-right:1px solid grey;*/

@@ -1,0 +1,35 @@
+<% if !(flash[:success].blank? && flash[:error].blank? && flash[:notice].blank?) %>
+	<% if !flash[:success].blank? %>
+			<div class="alert alert-success">
+				<button data-dismiss="alert" class="close">
+					×
+				</button>
+				<%= flash[:success] %>
+			</div>
+
+	<% elsif !flash[:error].blank? %>
+			<div class="alert alert-danger">
+				<button data-dismiss="alert" class="close">
+					×
+				</button>
+				<%= flash[:error] %>
+			</div>
+	<% elsif !flash[:notice].blank? %>
+	<div class="alert alert-danger">
+        <button data-dismiss="alert" class="close">
+          ×
+        </button>
+        <strong>Notice!</strong> <%= flash[:notice] %>
+      </div>
+	<% end %>
+<% end %>
+
+<!--<script>-->
+<!--  $('#error_msg').show();-->
+<!--  $("#widget_error_msg").show();-->
+<!--  $("#error_msg").fadeOut(5000);-->
+<!--  $("#widget_error_msg").fadeOut(4000);-->
+<!--  $("#error_msg_modal").fadeOut(9000);-->
+<!--  $('#widget-error').fadeOut(9000);-->
+<!--  scroll(0,0);-->
+<!--</script>-->
