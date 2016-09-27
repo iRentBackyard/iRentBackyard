@@ -16,7 +16,7 @@
   get 'listing-category/pool_party' => 'web#pool_party'
   get 'host' => 'web#host'
   get '/web/register_user/', :controller => 'web', :action => 'register_user'
-  post '/web/register_user/', :controller => 'web', :action => 'create_user'
+  post '/web/create_user/', :controller => 'web', :action => 'create_user'
   get '/web/sign_in_user', :controller => 'web', :action => "sign_in_user"
   get '/web/become_a_host', :controller => 'web', :action => "become_a_host"
   
