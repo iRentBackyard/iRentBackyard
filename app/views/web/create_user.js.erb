@@ -1,5 +1,7 @@
-<% if @user.blank? %>
+/* global $ */
+/* global location */
+// <% if @user.blank? %>
 	$('#validate_signup_form').html("<%= escape_javascript(render 'shared/flash_messages') %>");
-<% else %>
-	    location.reload();
-<% end %>
+// <% else %>
+	location.reload();
+// <% end %>
